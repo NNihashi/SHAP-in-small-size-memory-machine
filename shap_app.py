@@ -7,10 +7,10 @@ import shap
 
 class SHAP_Calculation:
 
-  def __init__(self, X, y, id_column, id_value):
+  def __init__(self, X, y, id_column=None, id_value=None):
     self.X = X
     self.y = y
-    # enter column
+    # Enter unique_key column if exists
     self.id_column = id_column
     self.id_value = id_value
     self.model_list = list()
@@ -127,6 +127,7 @@ class SHAP_Calculation:
     )
     # Actual target values and unique key will be implemented.
     df_shap_lgb["target"] = self.y
-    df_shap_lgb[self.id_column] = self.id_value
+    if self.id_column != None:
+      df_shap_lgb[self.id_column] = self.id_value
 
     return df_shap_lgb
