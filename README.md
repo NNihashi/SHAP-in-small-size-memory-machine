@@ -1,5 +1,5 @@
 # About
-This is a personal application of SHAP (SHapley Additive exPlanations: https://github.com/slundberg/shap) to analysis in relatively small memory machine environment like Google colab. This ongoing project tries to mitigate severe memory-consumptions during SHAP calculations without affecting computational complexity.
+This is a personal application of SHAP (SHapley Additive exPlanations: https://github.com/slundberg/shap) to analysis under relatively small memory machine environment like Google colab. This ongoing project tries to mitigate severe memory-consumptions during SHAP calculations without affecting computational complexity.
 # Outline of algorithm
 0. Preparing input-datasets(Numpy array for features and a target)  
 1. Training models(LightGBM: https://github.com/microsoft/LightGBM) from full-records data(with cross-validation and averaging for enhancing statistical significance and generalization performance)  
