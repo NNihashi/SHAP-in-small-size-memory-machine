@@ -1,5 +1,5 @@
 # About
-This is a personal application of SHAP (SHapley Additive exPlanations: https://github.com/slundberg/shap) to analysis under relatively small memory machine environment like Google colab. This ongoing project tries to mitigate severe memory-consumptions during SHAP calculations without affecting computational complexity.  
+This is a personal application of SHAP (SHapley Additive exPlanations: https://github.com/slundberg/shap) to analysis under relatively small memory machine environment like Google colab. This ongoing project tries to mitigate severe memory-consumptions during SHAP calculations of large scale data without affecting computational complexity.  
 Because this is a personal project, contents are to be modified Without notice.
 # Outline of algorithm
 0. Preparing input-datasets(Numpy array for features and a target)  
