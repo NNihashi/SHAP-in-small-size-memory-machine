@@ -5,5 +5,5 @@ This is a personal application of SHAP (SHapley Additive exPlanations: https://g
 1. Training models(LightGBM: https://github.com/microsoft/LightGBM) from full-records data(with cross-validation and averaging)  
 2. Splitting Full-records data into chunks of an empirically determined size(maximal records maintaining memory stability)  
 3. Predicting SHAP values and target values  
-4. Concatenating chunks and averaging over models(averaging is in step by step manner to reduce memory space)  
+4. Concatenating chunks and averaging over models(averaging is in step by step manner to spare memory space)  
 5. Converting results into Pandas Dataframe, and appending column names and unique-keys(for convenience in following analysis)  
