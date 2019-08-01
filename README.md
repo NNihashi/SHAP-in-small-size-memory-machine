@@ -8,7 +8,7 @@ Because this is a personal project, contents are to be modified Without notice.
 3. Predicting SHAP values and target values  
 4. Concatenating chunks and averaging over models(averaging is in step by step manner to spare memory space)  
 5. Converting results into Pandas Dataframe  
-6. Appending column names and unique-keys if necessary
+6. Appending unique-keys if necessary
 # How to use(Example: binary classification)  
 `import shap_app`  
 `from shap_app import SHAP_Calculation`  
