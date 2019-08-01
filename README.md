@@ -7,4 +7,22 @@ Because this is a personal project, contents are to be modified Without notice.
 2. Splitting Full-records data into chunks of an empirically determined size(maximal records maintaining memory stability)  
 3. Predicting SHAP values and target values  
 4. Concatenating chunks and averaging over models(averaging is in step by step manner to spare memory space)  
-5. Converting results into Pandas Dataframe, and appending column names and unique-keys(for convenience in following analysis)  
+5. Converting results into Pandas Dataframe, and appending column names and unique-keys(for convenience in following analysis)
+# How to use  
+`
+params = {
+    "max_bin": 512,
+    "learning_rate": 0.05,
+    "boosting_type": "gbdt",
+    "objective": "binary",
+    "num_leaves": 10,
+    "verbose": -1,
+    "min_data": 10,
+    "boost_from_average": True,
+    "metric": 'auc'
+}
+cv_cnt = 5
+SHAP_lgbm = SHAP_Calculation(X, y, id_column, id_value)
+SHAP_lgbm.training_model(cv_cnt, params)
+shap = SHAP_lgbm.SHAP_Calculation()
+`
