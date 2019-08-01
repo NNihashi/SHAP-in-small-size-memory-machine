@@ -21,11 +21,11 @@ params = {
     "boost_from_average": True,
     "metric": 'auc'
 }
-`
-`cv_cnt = 5`
-`SHAP_lgbm = SHAP_Calculation(X, y, id_column, id_value)`
-`SHAP_lgbm.training_model(cv_cnt, params)`
-`shap = SHAP_lgbm.SHAP_Calculation()`
+`  
+`cv_cnt = 5`  
+`SHAP_lgbm = SHAP_Calculation(X, y, id_column, id_value)`  
+`SHAP_lgbm.training_model(cv_cnt, params)`  
+`shap = SHAP_lgbm.SHAP_Calculation()`  
 
 
 
